@@ -1,0 +1,61 @@
+[17-Jul-2022 17:49:46 Europe/Sofia] PHP Fatal error:  Uncaught Exception: Error: php_network_getaddresses: getaddrinfo failed: Name or service not known (0) in /home/bookasir/public_html/system/library/mail/smtp.php:91
+Stack trace:
+#0 /home/bookasir/public_html/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/bookasir/public_html/catalog/controller/mail/register.php(44): Mail->send()
+#2 /home/bookasir/storage/modification/system/engine/action.php(79): ControllerMailRegister->index('account/custome...', Array, 7)
+#3 /home/bookasir/public_html/system/engine/event.php(62): Action->execute(Object(Registry), Array)
+#4 /home/bookasir/storage/modification/system/engine/loader.php(255): Event->trigger('model/account/c...', Array)
+#5 /home/bookasir/public_html/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#6 /home/bookasir/public_html/catalog/controller/checkout/register.php(207): Proxy->__call('addCustomer', Array)
+#7 /home/bookasir/storage/modification/system/engine/action.php(79): ControllerCheckoutRegister->save()
+#8 /home/bookasir/public_html/ in /home/bookasir/public_html/system/library/mail/smtp.php on line 91
+[17-Jul-2022 18:07:05 Europe/Sofia] PHP Fatal error:  Uncaught Exception: Error: Unable to find the socket transport "https" - did you forget to enable it when you configured PHP? (0) in /home/bookasir/public_html/system/library/mail/smtp.php:91
+Stack trace:
+#0 /home/bookasir/public_html/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/bookasir/public_html/catalog/controller/mail/order.php(275): Mail->send()
+#2 /home/bookasir/public_html/catalog/controller/mail/order.php(34): ControllerMailOrder->add(Array, '1', '', '')
+#3 /home/bookasir/storage/modification/system/engine/action.php(79): ControllerMailOrder->index('checkout/order/...', Array)
+#4 /home/bookasir/public_html/system/engine/event.php(62): Action->execute(Object(Registry), Array)
+#5 /home/bookasir/storage/modification/system/engine/loader.php(229): Event->trigger('model/checkout/...', Array)
+#6 /home/bookasir/public_html/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#7 /home/bookasir/public_html/catalog/controller/extension/payment/cod.php(13): Proxy->__call('addOrderHistory', A in /home/bookasir/public_html/system/library/mail/smtp.php on line 91
+[17-Jul-2022 18:09:41 Europe/Sofia] PHP Fatal error:  Uncaught Exception: Error: Unable to find the socket transport "https" - did you forget to enable it when you configured PHP? (0) in /home/bookasir/public_html/system/library/mail/smtp.php:91
+Stack trace:
+#0 /home/bookasir/public_html/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/bookasir/public_html/catalog/controller/mail/order.php(275): Mail->send()
+#2 /home/bookasir/public_html/catalog/controller/mail/order.php(34): ControllerMailOrder->add(Array, '1', '', '')
+#3 /home/bookasir/storage/modification/system/engine/action.php(79): ControllerMailOrder->index('checkout/order/...', Array)
+#4 /home/bookasir/public_html/system/engine/event.php(62): Action->execute(Object(Registry), Array)
+#5 /home/bookasir/storage/modification/system/engine/loader.php(229): Event->trigger('model/checkout/...', Array)
+#6 /home/bookasir/public_html/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#7 /home/bookasir/public_html/catalog/controller/extension/payment/cod.php(13): Proxy->__call('addOrderHistory', A in /home/bookasir/public_html/system/library/mail/smtp.php on line 91
+[17-Jul-2022 18:09:54 Europe/Sofia] PHP Fatal error:  Uncaught Exception: Error: Unable to find the socket transport "https" - did you forget to enable it when you configured PHP? (0) in /home/bookasir/public_html/system/library/mail/smtp.php:91
+Stack trace:
+#0 /home/bookasir/public_html/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/bookasir/public_html/catalog/controller/mail/order.php(275): Mail->send()
+#2 /home/bookasir/public_html/catalog/controller/mail/order.php(34): ControllerMailOrder->add(Array, '1', '', '')
+#3 /home/bookasir/storage/modification/system/engine/action.php(79): ControllerMailOrder->index('checkout/order/...', Array)
+#4 /home/bookasir/public_html/system/engine/event.php(62): Action->execute(Object(Registry), Array)
+#5 /home/bookasir/storage/modification/system/engine/loader.php(229): Event->trigger('model/checkout/...', Array)
+#6 /home/bookasir/public_html/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#7 /home/bookasir/public_html/catalog/controller/extension/payment/cod.php(13): Proxy->__call('addOrderHistory', A in /home/bookasir/public_html/system/library/mail/smtp.php on line 91
+[17-Jul-2022 18:10:42 Europe/Sofia] PHP Fatal error:  Uncaught Exception: Error: Unable to find the socket transport "https" - did you forget to enable it when you configured PHP? (0) in /home/bookasir/public_html/system/library/mail/smtp.php:91
+Stack trace:
+#0 /home/bookasir/public_html/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/bookasir/public_html/catalog/controller/mail/order.php(275): Mail->send()
+#2 /home/bookasir/public_html/catalog/controller/mail/order.php(34): ControllerMailOrder->add(Array, '1', '', '')
+#3 /home/bookasir/storage/modification/system/engine/action.php(79): ControllerMailOrder->index('checkout/order/...', Array)
+#4 /home/bookasir/public_html/system/engine/event.php(62): Action->execute(Object(Registry), Array)
+#5 /home/bookasir/storage/modification/system/engine/loader.php(229): Event->trigger('model/checkout/...', Array)
+#6 /home/bookasir/public_html/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#7 /home/bookasir/public_html/catalog/controller/extension/payment/cod.php(13): Proxy->__call('addOrderHistory', A in /home/bookasir/public_html/system/library/mail/smtp.php on line 91
+[17-Jul-2022 18:10:59 Europe/Sofia] PHP Fatal error:  Uncaught Exception: Error: Unable to find the socket transport "https" - did you forget to enable it when you configured PHP? (0) in /home/bookasir/public_html/system/library/mail/smtp.php:91
+Stack trace:
+#0 /home/bookasir/public_html/system/library/mail.php(142): Mail\Smtp->send()
+#1 /home/bookasir/public_html/catalog/controller/mail/order.php(275): Mail->send()
+#2 /home/bookasir/public_html/catalog/controller/mail/order.php(34): ControllerMailOrder->add(Array, '1', '', '')
+#3 /home/bookasir/storage/modification/system/engine/action.php(79): ControllerMailOrder->index('checkout/order/...', Array)
+#4 /home/bookasir/public_html/system/engine/event.php(62): Action->execute(Object(Registry), Array)
+#5 /home/bookasir/storage/modification/system/engine/loader.php(229): Event->trigger('model/checkout/...', Array)
+#6 /home/bookasir/public_html/system/engine/proxy.php(47): Loader->{closure}(Array, Array)
+#7 /home/bookasir/public_html/catalog/controller/extension/payment/cod.php(13): Proxy->__call('addOrderHistory', A in /home/bookasir/public_html/system/library/mail/smtp.php on line 91

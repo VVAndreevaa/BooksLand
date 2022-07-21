@@ -1,0 +1,9 @@
+[18-Jul-2022 21:43:13 Europe/Sofia] PHP Fatal error:  Uncaught Exception: Error: Duplicate column name 'short_description'<br />Error No: 1060<br />ALTER TABLE oc_product_description ADD short_description TEXT AFTER description in /home/bookasir/public_html/system/library/db/mysqli.php:48
+Stack trace:
+#0 /home/bookasir/public_html/system/library/db.php(45): DB\MySQLi->query('ALTER TABLE oc_...')
+#1 /home/bookasir/public_html/MNBV8/controller/extension/module/shortdescription.php(132): DB->query('ALTER TABLE oc_...')
+#2 /home/bookasir/storage/modification/system/engine/action.php(79): ControllerExtensionModuleShortdescription->install(Array)
+#3 /home/bookasir/storage/modification/system/engine/loader.php(48): Action->execute(Object(Registry), Array)
+#4 /home/bookasir/public_html/MNBV8/controller/extension/extension/module.php(31): Loader->controller('extension/modul...')
+#5 /home/bookasir/storage/modification/system/engine/action.php(79): ControllerExtensionExtensionModule->install()
+#6 /home/bookasir/public_html/MNBV8/controller/startup/router.php(26): Action->e in /home/bookasir/public_html/system/library/db/mysqli.php on line 48
